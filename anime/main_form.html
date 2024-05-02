@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <title>
+            Join Us
+        </title>
+        <link rel="stylesheet" href="scrollbar.css">
+        <style>
+            textarea{width: 500px;
+                     max-height: 500px;
+                     resize: none;}
+            td{
+                font-size: 20px;
+                width: 400px;
+                font-weight: bold;
+                border: 2px solid violet;
+                background-color: rgb(200, 0, 150);
+                }
+            table{
+                border: 4px solid rgb(200, 50, 100);
+                background-color: rgb(200, 50, 200);
+            }
+        </style>
+        <script>
+             function check(){
+                var a = join.name.value;
+                var b = join.age.value;
+                var d = join.nation.value;
+                var e = join.prof.value;
+                var f = join.address.value;
+                var g = join.pin.value;
+                var h = join.post.value;
+                var i = join.ph.value;
+                var j = join.email.value;
+                var g_len = g.length;
+                var i_len = i.length;
+                //email,age main
+                //b is number; b<18; g length==6; i length==12; j match '@','.';
+                if(b!='' && i!='' && j!='' && a!='' && f!=''){
+                    if(Number(b) && Number(b)>=18){
+                        if(i.length==10){
+                            if(j.includes('@') && j.includes('.')){
+                                if(g.length==6){
+                                    alert("form is done");
+                                    return true;
+                                }
+                                else{
+                                    alert("enter proper pin code");
+                                    return false;
+                                }
+                            }
+                            else{
+                                alert("enter proper email id");
+                                return false;
+                            }
+                        }
+                        else{
+                            alert("enter full 10 digit phone number");
+                            return false;
+                        }
+                    }
+                    else{
+                        alert("enter age");
+                        return false;
+                    }
+                }
+                else{
+                    alert('Fill up all forms');
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+            <center>
+            <u><b>
+                <h1>Become an Otaku today</h1>
+                <h3 align="left">Please fill the following form carefully:</h3>
+            </b></u>
+            <form id="join" name="join" method="post" action="acknowledgement.html" onsubmit="return check()">
+            <table>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <h2><u>Application Form</u></h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Name:
+                        </td>
+                        <td>
+                            <input type = "text" name="name" id="name">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Age:
+                        </td>
+                        <td>
+                            <input type = "text" name="age" id="age">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Nationality: 
+                        </td>
+                        <td>
+                            <select id="nation" name="nation"> 
+                            <option>Indian</option>
+                            <option>Nepali</option>
+                            <option>Bhutanese</option>
+                            <option>Tibetan</option>
+                            <option>Burmese</option>
+                            <option>Others</option>
+                        </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Profession: 
+                        </td>
+                        <td>
+                            <input type = "text"  name="prof" id="prof">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Address: 
+                        </td>
+                        <td>
+                            <input type = "text"  name="address" id="address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pin code: 
+                        </td>
+                        <td>
+                            <input  type = "text"  name="pin" id="pin">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Post Office: 
+                        </td>
+                        <td>
+                            <input type = "text"  name="post" id="post">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mobile No.: 
+                        </td>
+                        <td>
+                            <input  type = "text"  name="ph" id="ph">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            E-mail Id: 
+                        </td>
+                        <td>
+                            <input  type = "text"  name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align = "center">
+                            <input type="reset" value="Refresh" id="refresh"  style="height: 30px; width: 100px; background-color: rgb(223, 217, 205); font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" vspace = "10px">
+                        </td>
+                        <td align = "center">
+                            <input type="submit" value="Submit" id="submit" style="height: 30px; width: 100px; background-color: rgb(223, 217, 205); font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" vspace = "10px"> 
+                        </td>
+                    </tr>
+                </table>
+            </center>
+    </body>
+</html>
