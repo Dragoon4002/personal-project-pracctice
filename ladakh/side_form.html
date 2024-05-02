@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>side form</title>
+        <style>
+            body{
+                background-image: linear-gradient(to right, rgb(0,0,255), rgb(0,0,50));
+                position:fixed;
+                color: white;
+            }
+            td{
+                background-color: rgb(100, 0, 150);
+                padding: 2vmin;
+            }
+            .font{
+                color: cyan;
+            }
+            input{
+                width: 80vmin;
+            }
+        </style>
+        <script>
+            function send(){
+                var fn=side.fn.value;
+                var eml=side.eml.value;
+                var ps=side.psd.value;
+                var cps=side.cpsd.value;
+                if(fn!="" && eml!="" && ps!="" && cps!=""){
+                    if((eml.includes('@')) && (eml.includes('.'))){
+                        if(ps==cps){
+                            alert("We are good to go");
+                            return true;
+                        }
+                        else{
+                            alert("Both the passwords are different please verify");
+                            return false;
+                        }
+                    }
+                    else
+                    alert('Enter the Email properly');
+                    return false;
+                }
+                else{
+                    alert('please fill up all the forms');
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="side" method="post" action="thanking.html" onsubmit="return send()">
+            <table>
+                <tr><td>
+                    <div class="font">FULL NAME:</div>
+                    <input type="text" name="fn">
+                </td></tr>
+                <tr><td>
+                    <div class="font">EMAIL ID:</div>
+                    <input type="text" name="eml">
+                </td></tr>
+                <tr><td>
+                    <div class="font">PASSWORD:</div>
+                    <input type="text" name="psd">
+                </td></tr>
+                <tr><td>
+                    <div class="font">CONFIRM PASSWORD:</div>
+                    <input type="text" name="cpsd">
+                </td></tr>
+                <tr><td>
+                    <button type="submit">Send</button>
+                    <button type="reset">CLEAR</button>
+                </td></tr>
+            </table>
+        </form>
+    </body>
+</html>

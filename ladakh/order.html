@@ -1,0 +1,322 @@
+<html>
+    <head>
+        <title>order</title>
+        <style>
+            body{
+                background-image: linear-gradient(to right,rgb(0,0,50),rgb(0,0,255));
+                color: white;
+            }
+            td{
+                font-size:small;
+            }
+            table.inner{
+                border-color: white;
+            }
+            table.main{
+                border-color: white;
+            }
+            h1{
+                padding-top: 4vmin;
+                color: rgb(0, 180, 255);
+            }
+            .buypane{
+                background-image: linear-gradient(to right,rgb(50,50,150),rgb(100,100,255));
+                color: cyan;
+                font-size: larger;
+                padding: 5 5 5 5;
+            }
+            .buypane button{
+                padding: 5 5 5 5;
+            }
+            .price{
+                color: rgb(0, 150, 255);
+            }
+            button{
+                width: 70px;
+                height: 30px;
+                background-color:rgb(100,200,200);
+                color: rgb(0,50,50);
+                border: 0;
+            }
+            ::-webkit-scrollbar {
+                width: 15px;
+            }
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px rgb(0,100,255); 
+                background-color: rgb(0,150,255);
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgb(0, 200, 255);
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgb(0, 180, 250);
+            }
+        </style>
+    </head>
+    <body>
+        <table class="main" width="100%" height="100%" border="3vmin">
+            <tr>
+                <td colspan="4">
+                    <h1 align="center">Shopping List</h1>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="1" value="2000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/redwooddragon.jpg" width="80vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Red Wood Dragon</td></tr>
+                                    <tr><td>Price:</td><td>Rs.2,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="2" value="1500"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/prayerwheel(1500).jpg" width="160vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Prayer wheel (small)</td></tr>
+                                    <tr><td>Price:</td><td>Rs.1,500</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="3" value="9000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/buddistmask-setof9.jpg" width="100vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Buddhist mask set of 9</td></tr>
+                                    <tr><td>Price:</td><td>Rs.9,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="4" value="500"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/tibetantrumpet.jpg" width="130vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Tibetan trumpet</td></tr>
+                                    <tr><td>Price:</td><td>Rs.500</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="5" value="3000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/dragon rug.jpg" width="90vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Dragon rug</td></tr>
+                                    <tr><td>Price:</td><td>Rs.3,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="6" value="5000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/ladakhi carpet.jpg" width="160vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Blue white designer carpet</td></tr>
+                                    <tr><td>Price:</td><td>Rs.5,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="7" value="950"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/bell.jpg" width="100vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Buddhist Bell</td></tr>
+                                    <tr><td>Price:</td><td>Rs.950</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="8" value="4000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/gur tea set.jpg" width="140vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Red clay Tea set</td></tr>
+                                    <tr><td>Price:</td><td>Rs.4,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="9" value="2000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/coloured goncha.jpg" width="100vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Goncha<br>(violet with green shade)</td></tr>
+                                    <tr><td>Price:</td><td>Rs.2,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="10" value="4000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/4 rug set.jpg" width="160vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Set of 4 rugs</td></tr>
+                                    <tr><td>Price:</td><td>Rs.4,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="11" value="2000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/white goncha.jpg" width="100vmin"></td></tr>
+                                    <tr><td>Name:</td><td>White Goncha</td></tr>
+                                    <tr><td>Price:</td><td>Rs.2,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="12" value="5000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/mf set of traditional dress.jpg" width="90vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Traditional dress [male&female]</td></tr>
+                                    <tr><td>Price:</td><td>Rs.5,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="21" value="1000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/local jewellery.jpg" width="90vmin"></td></tr>
+                                    <tr><td>Name:</td><td>local ornamental jewel</td></tr>
+                                    <tr><td>Price:</td><td>Rs.1,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="22" value="5000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/silver jewel.jpg" width="150vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Silvr ornament</td></tr>
+                                    <tr><td>Price:</td><td>Rs.5,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="23" value="1000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/ts jewellery 1.jpg" width="100vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Pashmini</td></tr>
+                                    <tr><td>Price:</td><td>Rs.1,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="25%">
+                    <table class="inner" width="100%" height="100%">
+                        <tr>
+                            <td width="10%"><input type="checkbox" name="ITEMS" id="24" value="1000"></td>
+                            <td width="90%">
+                                <table class="object" width="100%" height="100%">
+                                    <tr><td colspan="2"><img src="images/order/ts jewellery 2.jpg" width="120vmin"></td></tr>
+                                    <tr><td>Name:</td><td>Pashmini</td></tr>
+                                    <tr><td>Price:</td><td>Rs.1,000</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div class="buypane">
+            Total Price:<div  id="fees" class="price"></div>
+            <button type="submit" id="btn">Calculate</button>
+            <button onclick="reload()">Reset</button>
+            <a href="MOP.html" target="content"><button>Buy</button></a>
+        </div>
+        <script>
+            const btn= document.querySelector('#btn');
+            btn.addEventListener('click', (event) => {
+                let checkboxes = document.querySelectorAll('input[name="ITEMS"]:checked');
+                let values = [];
+                let fee=0;
+                checkboxes.forEach((checkbox) => {
+                    values.push(checkbox.value);
+                });
+                var len=values.length;
+                for(i=0;i<len;i++)
+                fee+=parseInt(values[i]);
+                document.getElementById("fees").innerHTML=fee;
+                }); 
+            function reload(){
+                location.reload();
+            }   
+        </script>
+    </body>
+</html>
