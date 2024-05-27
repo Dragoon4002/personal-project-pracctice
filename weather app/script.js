@@ -1,5 +1,3 @@
-
-
 const container = document.querySelector(".container");
 const search = document.querySelector(".search-box button");
 const weatherBox = document.querySelector(".weather-box");
@@ -8,7 +6,7 @@ const error404 = document.querySelector(".not-found");
 
 
 search.addEventListener('click',()=>{
-    const APIkey = "9e2b45a3e1775bd301c5e94384f8784d";
+    const APIkey = /*Your Api key that you can get from logging-in in https://openweathermap.org/api*/;
     const city = document.querySelector(".search-box input").value;
 
     if(city=== '')
